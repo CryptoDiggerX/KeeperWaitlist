@@ -332,10 +332,6 @@
       <div class="fee-text">
         <div class="fee-label">Claim fee</div>
         <div class="fee-amount">0.1 GRAM ✦ TON</div>
-        <div class="fee-to">
-          <span id="fee-to-addr"></span>
-          <button class="copy-btn" id="copy-fee-addr">Copy</button>
-        </div>
       </div>
     </div>
 
@@ -404,8 +400,6 @@
     document.getElementById('ref-banner').classList.remove('hidden');
   }
 
-  document.getElementById('fee-to-addr').textContent =
-    FEE_RECEIVER.slice(0,10) + '...' + FEE_RECEIVER.slice(-6);
 
   const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
     manifestUrl: MANIFEST_URL,
@@ -446,10 +440,6 @@
     document.body.removeChild(ta);
     return Promise.resolve();
   }
-
-  document.getElementById('copy-fee-addr').addEventListener('click', () => {
-    copyText(FEE_RECEIVER).then(() => showToast('Fee address copied'));
-  });
 
   document.getElementById('share-btn').addEventListener('click', () => {
     const link = showSuccess._refLink || window.location.href;
