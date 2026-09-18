@@ -1,8 +1,7 @@
 {
-  "url": "https://YOUR-DOMAIN.vercel.app",
+  "url": "https://keeper-waitlist.vercel.app",
   "name": "Keeper Waitlist",
-  "iconUrl": "https://YOUR-DOMAIN.vercel.app/icon.png",
+  "iconUrl": "https://keeper-waitlist.vercel.app/icon.png",
   "termsOfUseUrl": "",
   "privacyPolicyUrl": ""
 }
-
